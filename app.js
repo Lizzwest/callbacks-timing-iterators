@@ -66,26 +66,27 @@
 //return a string in each callback describing the super power
 
 
-// function superHero(power1, power2, superPower1, superPower2){
+function gamora(superPower1, superPower2){
 
-//     let resul= callback1(power1) + callback2(power2);
-//     return resul;
+    let allSuperPowers3= superPower1() + " and " + superPower2();
+    
+    return allSuperPowers3;
 
-// }
+}
 
-// function superPower1(power1){
-//     let power1= "x-ray vision";
-//     return power1;
+function superPower1(){
+    let power1= "Super strength";
+    return power1;
 
-// }
+}
 
-// function superPower2(power2){
-//     let power2="telepathy";
-//     return power2;
+function superPower2(){
+    let power2="Kicking butt while looking cute";
+    return power2;
 
-// }
+}
 
-// console.log(superHero( superPower1, superPower2));
+console.log(gamora( superPower1, superPower2));
 
 
 //Rome's example
