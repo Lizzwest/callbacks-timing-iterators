@@ -66,23 +66,43 @@
 //return a string in each callback describing the super power
 
 
-function superHero(power1, power2, superPower1, superPower2){
+// function superHero(power1, power2, superPower1, superPower2){
 
-    let resul= callback1(power1) + callback2(power2);
-    return resul;
+//     let resul= callback1(power1) + callback2(power2);
+//     return resul;
 
+// }
+
+// function superPower1(power1){
+//     let power1= "x-ray vision";
+//     return power1;
+
+// }
+
+// function superPower2(power2){
+//     let power2="telepathy";
+//     return power2;
+
+// }
+
+// console.log(superHero( superPower1, superPower2));
+
+
+//Rome's example
+
+function sonic(superPowerOne, superPowerTwo){
+    let allSuperPowers = superPowerOne() + " and " + superPowerTwo();
+
+    return allSuperPowers;
 }
+function superSpeed(){
+    let power = "I can run 1000 mph";
 
-function superPower1(power1){
-    let power1= "x-ray vision";
-    return power1;
-
+    return power;
 }
+function superSpin(){
+    let spin = "I can spin 1000 mph";
 
-function superPower2(power2){
-    let power2="telepathy";
-    return power2;
-
+    return spin;
 }
-
-console.log(superHero( superPower1, superPower2));
+console.log(sonic(superSpeed, superSpin));
