@@ -40,18 +40,22 @@ console.log(greeting(myName, anotherGreeting));
 
 
 function calculator(num1, num2, callbackOne, callbackTwo){
-    for(let i =0, i <= num1 + num2; i++)
-    let num1= 4
-    let num2 = 6
-
+   
 let result = callbackOne(num1, num2) + callbackTwo(num1, num2);
 return result;
 
 }
 
 function addNumbers(num1, num2){
+    let result = num1 + num2;
+
+    return result;
 
 }
 function subtractNumbers(num1, num2){
+    let result = num1 - num2;
+
+    return result;
+
 }
 console.log(calculator(5,77, addNumbers, subtractNumbers));
