@@ -107,3 +107,38 @@ function superSpin(){
     return spin;
 }
 console.log(sonic(superSpeed, superSpin));
+
+
+
+function blastOff(){
+    let num = 0;
+
+    for(let i = 10; i>= num; i--){
+        console.log(i);
+    }
+console.log("BLAST OFF!!!!!!!")
+}
+
+setTimeout(blastOff, 5000);
+
+
+//make a function that prints your name
+
+function myName(){
+    let num = 0;
+    for(let i = 0; i>= num; i--){
+console.log("Lizz");
+}
+}
+
+setTimeout(myName, 5000);
+
+
+function printName(name){
+    console.log(name);
+}
+
+let myNameTwo = "Lizz";
+setTimeout(function(){
+    printName(myNameTwo);
+}, 5000);
